@@ -1,0 +1,204 @@
+var g_data = {
+b8:[{dummy:0},
+{anchor:'cvg1138',items:[{z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',c:'G',p:'90.00'}
+,{cr:'c',t:'I',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',h:'20',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRD) begin',f:'source/memory_control.sv',l:'58',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK1) begin',f:'source/memory_control.sv',l:'65',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK2) begin',f:'source/memory_control.sv',l:'70',h:'1',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRDX) begin',f:'source/memory_control.sv',l:'75',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM1) begin',f:'source/memory_control.sv',l:'82',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM2) begin',f:'source/memory_control.sv',l:'87',h:'1',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK1) begin',f:'source/memory_control.sv',l:'92',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK2) begin',f:'source/memory_control.sv',l:'97',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',h:'0',c:'r'}
+]},
+{anchor:'cvg1139',items:[{z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(!ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'40',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(ccif.ccwrite[!prio] && ccif.dREN[!prio]) begin',f:'source/memory_control.sv',l:'44',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(!ccif.ccwrite[!prio] && ccif.dREN[!prio]) begin',f:'source/memory_control.sv',l:'48',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(ccif.dWEN[prio]) begin',f:'source/memory_control.sv',l:'52',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',h:'10',c:'g'}
+]},
+{anchor:'cvg1140',items:[{z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',c:'Y',p:'66.66'}
+,{cr:'m',t:'I',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',h:'0',c:'r'}
+,{cr:'c',t:'T',z:'    else if(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'61',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',h:'1',c:'g'}
+]},
+{anchor:'cvg1141',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',h:'1',c:'g'}
+]},
+{anchor:'cvg1142',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',h:'0',c:'r'}
+]},
+{anchor:'cvg1143',items:[{z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',c:'Y',p:'66.66'}
+,{cr:'c',t:'I',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',h:'2',c:'g'}
+,{cr:'m',t:'T',z:'    else if(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'78',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',h:'1',c:'g'}
+]},
+{anchor:'cvg1144',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',h:'1',c:'g'}
+]},
+{anchor:'cvg1145',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',h:'0',c:'r'}
+]},
+{anchor:'cvg1146',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',h:'1',c:'g'}
+]},
+{anchor:'cvg1147',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',h:'0',c:'r'}
+]},
+{anchor:'cvg1148',items:[{z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',c:'Y',p:'85.71'}
+,{cr:'c',t:'I',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',h:'27',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRD) begin',f:'source/memory_control.sv',l:'123',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK1 | state == READ_WRITEBACK2) begin',f:'source/memory_control.sv',l:'128',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRDX) begin',f:'source/memory_control.sv',l:'135',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM1 | state == READFROMRAM2) begin',f:'source/memory_control.sv',l:'140',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK1 | state ==  PURE_WRITEBACK2) begin',f:'source/memory_control.sv',l:'144',h:'3',c:'g'}
+,{cr:'m',t:'A',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',h:'0',c:'r'}
+]},
+{anchor:'cvg1149',items:[{z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',h:'3',c:'g'}
+,{cr:'c',t:'A',z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',h:'38',c:'g'}
+]},
+{anchor:'cvg1150',items:[{z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',h:'15',c:'g'}
+,{cr:'c',t:'A',z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',h:'22',c:'g'}
+]},
+{anchor:'cvg1151',items:[{z:'  if(!nRST) begin',f:'source/memory_control.sv',l:'167',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(!nRST) begin',f:'source/memory_control.sv',l:'167',h:'9',c:'g'}
+,{cr:'c',t:'E',z:'  else begin',f:'source/memory_control.sv',l:'173',h:'21',c:'g'}
+]}],
+b1137:[{dummy:0},
+{anchor:'cvg1138',items:[{z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',c:'G',p:'90.00'}
+,{cr:'c',t:'I',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',h:'20',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRD) begin',f:'source/memory_control.sv',l:'58',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK1) begin',f:'source/memory_control.sv',l:'65',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK2) begin',f:'source/memory_control.sv',l:'70',h:'1',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRDX) begin',f:'source/memory_control.sv',l:'75',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM1) begin',f:'source/memory_control.sv',l:'82',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM2) begin',f:'source/memory_control.sv',l:'87',h:'1',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK1) begin',f:'source/memory_control.sv',l:'92',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK2) begin',f:'source/memory_control.sv',l:'97',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'35',h:'0',c:'r'}
+]},
+{anchor:'cvg1139',items:[{z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(!ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'40',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(ccif.ccwrite[!prio] && ccif.dREN[!prio]) begin',f:'source/memory_control.sv',l:'44',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(!ccif.ccwrite[!prio] && ccif.dREN[!prio]) begin',f:'source/memory_control.sv',l:'48',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'    else if(ccif.dWEN[prio]) begin',f:'source/memory_control.sv',l:'52',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ccwrite[prio] && ccif.dREN[prio]) begin',f:'source/memory_control.sv',l:'36',h:'10',c:'g'}
+]},
+{anchor:'cvg1140',items:[{z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',c:'Y',p:'66.66'}
+,{cr:'m',t:'I',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',h:'0',c:'r'}
+,{cr:'c',t:'T',z:'    else if(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'61',h:'2',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'59',h:'1',c:'g'}
+]},
+{anchor:'cvg1141',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'66',h:'1',c:'g'}
+]},
+{anchor:'cvg1142',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'71',h:'0',c:'r'}
+]},
+{anchor:'cvg1143',items:[{z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',c:'Y',p:'66.66'}
+,{cr:'c',t:'I',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',h:'2',c:'g'}
+,{cr:'m',t:'T',z:'    else if(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'78',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',f:'source/memory_control.sv',l:'76',h:'1',c:'g'}
+]},
+{anchor:'cvg1144',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'83',h:'1',c:'g'}
+]},
+{anchor:'cvg1145',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'88',h:'0',c:'r'}
+]},
+{anchor:'cvg1146',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',h:'1',c:'g'}
+,{cr:'c',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'93',h:'1',c:'g'}
+]},
+{anchor:'cvg1147',items:[{z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',c:'Y',p:'50.00'}
+,{cr:'c',t:'I',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',h:'1',c:'g'}
+,{cr:'m',t:'A',z:'    if(ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'98',h:'0',c:'r'}
+]},
+{anchor:'cvg1148',items:[{z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',c:'Y',p:'85.71'}
+,{cr:'c',t:'I',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',h:'27',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRD) begin',f:'source/memory_control.sv',l:'123',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READ_WRITEBACK1 | state == READ_WRITEBACK2) begin',f:'source/memory_control.sv',l:'128',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == SENDBUSRDX) begin',f:'source/memory_control.sv',l:'135',h:'2',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == READFROMRAM1 | state == READFROMRAM2) begin',f:'source/memory_control.sv',l:'140',h:'3',c:'g'}
+,{cr:'c',t:'T',z:'  else if(state == PURE_WRITEBACK1 | state ==  PURE_WRITEBACK2) begin',f:'source/memory_control.sv',l:'144',h:'3',c:'g'}
+,{cr:'m',t:'A',z:'  if(state == IDLE) begin',f:'source/memory_control.sv',l:'119',h:'0',c:'r'}
+]},
+{anchor:'cvg1149',items:[{z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',h:'3',c:'g'}
+,{cr:'c',t:'A',z:'  if(ccif.ramstate == ACCESS && (state == READFROMRAM2 | state == READ_WR...',f:'source/memory_control.sv',l:'151',h:'38',c:'g'}
+]},
+{anchor:'cvg1150',items:[{z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',h:'15',c:'g'}
+,{cr:'c',t:'A',z:'  if(state == IDLE && ccif.ramstate == ACCESS)',f:'source/memory_control.sv',l:'161',h:'22',c:'g'}
+]},
+{anchor:'cvg1151',items:[{z:'  if(!nRST) begin',f:'source/memory_control.sv',l:'167',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  if(!nRST) begin',f:'source/memory_control.sv',l:'167',h:'9',c:'g'}
+,{cr:'c',t:'E',z:'  else begin',f:'source/memory_control.sv',l:'173',h:'21',c:'g'}
+]}],
+b9:[{dummy:0},
+{anchor:'cvg1228',items:[{z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',h:'18',c:'g'}
+,{cr:'c',t:'E',z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',h:'9',c:'g'}
+]},
+{anchor:'cvg1229',items:[{z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',h:'17',c:'g'}
+,{cr:'c',t:'E',z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',h:'11',c:'g'}
+]},
+{anchor:'cvg1230',items:[{z:'    if (!nRST)',f:'source/ram.sv',l:'71',c:'Y',p:'75.00'}
+,{cr:'c',t:'I',z:'    if (!nRST)',f:'source/ram.sv',l:'71',h:'9',c:'g'}
+,{cr:'c',t:'T',z:'    else if (',f:'source/ram.sv',l:'77',h:'15',c:'g'}
+,{cr:'m',t:'T',z:'    else if ((ramif.ramREN || ramif.ramWEN) && count < LAT)',f:'source/ram.sv',l:'87',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!nRST)',f:'source/ram.sv',l:'71',h:'6',c:'g'}
+]},
+{anchor:'cvg1231',items:[{z:'    casez({ramif.ramWEN,ramif.ramREN,nRST})',f:'source/ram.sv',l:'95',c:'G',p:'100.00'}
+,{cr:'c',t:'T',z:'      3\'b00z:   rstate = FREE;',f:'source/ram.sv',l:'96',h:'9',c:'g'}
+,{cr:'c',t:'T',z:'      3\'b011,',f:'source/ram.sv',l:'97',h:'5',c:'g'}
+,{cr:'c',t:'T',z:'      3\'b101:   rstate = BUSY;',f:'source/ram.sv',l:'98',h:'2',c:'g'}
+]},
+{anchor:'cvg1232',items:[{z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',h:'15',c:'g'}
+,{cr:'c',t:'A',z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',h:'9',c:'g'}
+]}],
+b1227:[{dummy:0},
+{anchor:'cvg1228',items:[{z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',h:'18',c:'g'}
+,{cr:'c',t:'E',z:'  assign ramif.ramload = (rstate == ACCESS) ? q : BAD;',f:'source/ram.sv',l:'65',h:'9',c:'g'}
+]},
+{anchor:'cvg1229',items:[{z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',h:'17',c:'g'}
+,{cr:'c',t:'E',z:'  assign wren = (rstate == ACCESS) ? ramif.ramWEN : 0;',f:'source/ram.sv',l:'66',h:'11',c:'g'}
+]},
+{anchor:'cvg1230',items:[{z:'    if (!nRST)',f:'source/ram.sv',l:'71',c:'Y',p:'75.00'}
+,{cr:'c',t:'I',z:'    if (!nRST)',f:'source/ram.sv',l:'71',h:'9',c:'g'}
+,{cr:'c',t:'T',z:'    else if (',f:'source/ram.sv',l:'77',h:'15',c:'g'}
+,{cr:'m',t:'T',z:'    else if ((ramif.ramREN || ramif.ramWEN) && count < LAT)',f:'source/ram.sv',l:'87',h:'0',c:'r'}
+,{cr:'c',t:'A',z:'    if (!nRST)',f:'source/ram.sv',l:'71',h:'6',c:'g'}
+]},
+{anchor:'cvg1231',items:[{z:'    casez({ramif.ramWEN,ramif.ramREN,nRST})',f:'source/ram.sv',l:'95',c:'G',p:'100.00'}
+,{cr:'c',t:'T',z:'      3\'b00z:   rstate = FREE;',f:'source/ram.sv',l:'96',h:'9',c:'g'}
+,{cr:'c',t:'T',z:'      3\'b011,',f:'source/ram.sv',l:'97',h:'5',c:'g'}
+,{cr:'c',t:'T',z:'      3\'b101:   rstate = BUSY;',f:'source/ram.sv',l:'98',h:'2',c:'g'}
+]},
+{anchor:'cvg1232',items:[{z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',c:'G',p:'100.00'}
+,{cr:'c',t:'I',z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',h:'15',c:'g'}
+,{cr:'c',t:'A',z:'    if (!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramW...',f:'source/ram.sv',l:'101',h:'9',c:'g'}
+]}],
+dummyEnd:0
+};
+processBranchesData(g_data);

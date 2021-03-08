@@ -1,0 +1,74 @@
+var g_data = {
+f8:{
+scopes:[{link:'z.htm?f=0&s=8',val:'work.memory_control'}]
+,FSMs:[{dummy:0}
+,{anchor:'cvg1214',items:[{c:'Y',p:'86.11',z:'state'}
+,{cr:'c',s:'1',z:'IDLE',h:'20',c:'g'}
+,{cr:'c',z:'IDLE -> SENDBUSRDX',h:'2',c:'g'}
+,{cr:'c',z:'IDLE -> SENDBUSRD',h:'2',c:'g'}
+,{cr:'c',z:'IDLE -> PURE_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'SENDBUSRDX',h:'2',c:'g'}
+,{cr:'c',z:'SENDBUSRDX -> READFROMRAM1',h:'1',c:'g'}
+,{cr:'m',z:'SENDBUSRDX -> READ_WRITEBACK1',h:'0',c:'r'}
+,{cr:'c',z:'SENDBUSRDX -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'SENDBUSRD',h:'2',c:'g'}
+,{cr:'m',z:'SENDBUSRD -> READFROMRAM1',h:'0',c:'r'}
+,{cr:'c',z:'SENDBUSRD -> READ_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'SENDBUSRD -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'PURE_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'PURE_WRITEBACK1 -> PURE_WRITEBACK2',h:'1',c:'g'}
+,{cr:'m',z:'PURE_WRITEBACK1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READFROMRAM1',h:'1',c:'g'}
+,{cr:'c',z:'READFROMRAM1 -> READFROMRAM2',h:'1',c:'g'}
+,{cr:'m',z:'READFROMRAM1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READ_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'READ_WRITEBACK1 -> READ_WRITEBACK2',h:'1',c:'g'}
+,{cr:'m',z:'READ_WRITEBACK1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READ_WRITEBACK2',h:'1',c:'g'}
+,{cr:'c',z:'READ_WRITEBACK2 -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'READFROMRAM2',h:'1',c:'g'}
+,{cr:'c',z:'READFROMRAM2 -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'PURE_WRITEBACK2',h:'1',c:'g'}
+,{cr:'c',z:'PURE_WRITEBACK2 -> IDLE',h:'1',c:'g'}
+]}
+
+],
+},
+f1137:{
+scopes:[{s:'12',b:'1',val:'memory_control_tb'},{link:'z.htm?f=0&s=1137',val:'DUT'}]
+,FSMs:[{dummy:0}
+,{anchor:'cvg1214',items:[{c:'Y',p:'86.11',z:'state'}
+,{cr:'c',s:'1',z:'IDLE',h:'20',c:'g'}
+,{cr:'c',z:'IDLE -> SENDBUSRDX',h:'2',c:'g'}
+,{cr:'c',z:'IDLE -> SENDBUSRD',h:'2',c:'g'}
+,{cr:'c',z:'IDLE -> PURE_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'SENDBUSRDX',h:'2',c:'g'}
+,{cr:'c',z:'SENDBUSRDX -> READFROMRAM1',h:'1',c:'g'}
+,{cr:'m',z:'SENDBUSRDX -> READ_WRITEBACK1',h:'0',c:'r'}
+,{cr:'c',z:'SENDBUSRDX -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'SENDBUSRD',h:'2',c:'g'}
+,{cr:'m',z:'SENDBUSRD -> READFROMRAM1',h:'0',c:'r'}
+,{cr:'c',z:'SENDBUSRD -> READ_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'SENDBUSRD -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'PURE_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'PURE_WRITEBACK1 -> PURE_WRITEBACK2',h:'1',c:'g'}
+,{cr:'m',z:'PURE_WRITEBACK1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READFROMRAM1',h:'1',c:'g'}
+,{cr:'c',z:'READFROMRAM1 -> READFROMRAM2',h:'1',c:'g'}
+,{cr:'m',z:'READFROMRAM1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READ_WRITEBACK1',h:'1',c:'g'}
+,{cr:'c',z:'READ_WRITEBACK1 -> READ_WRITEBACK2',h:'1',c:'g'}
+,{cr:'m',z:'READ_WRITEBACK1 -> IDLE',h:'0',c:'r'}
+,{cr:'c',s:'1',z:'READ_WRITEBACK2',h:'1',c:'g'}
+,{cr:'c',z:'READ_WRITEBACK2 -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'READFROMRAM2',h:'1',c:'g'}
+,{cr:'c',z:'READFROMRAM2 -> IDLE',h:'1',c:'g'}
+,{cr:'c',s:'1',z:'PURE_WRITEBACK2',h:'1',c:'g'}
+,{cr:'c',z:'PURE_WRITEBACK2 -> IDLE',h:'1',c:'g'}
+]}
+
+],
+},
+dummyEnd:0
+};
+processFsmData(g_data);

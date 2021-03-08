@@ -1,0 +1,19 @@
+org 0x0000
+
+ORI $1, $0, 0x1
+ORI $2, $0, 0x2
+ORI $3, $0, 0x3
+
+SW $3, 0xfff8($0)
+
+LW $1, 0xfff8($0)
+LW $2, 0xfff8($0)
+
+SW $3, 0xfffc($0)
+SW $3, 0xfff0($0)
+
+halt
+
+org 0x0200
+halt
+

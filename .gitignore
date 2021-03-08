@@ -1,0 +1,13 @@
+work
+mapped
+fpga
+transcript
+*.wlf
+README
+*.swp
+._*
+*.log
+.deps
+*.hex
+*.ver
+testasm.diff

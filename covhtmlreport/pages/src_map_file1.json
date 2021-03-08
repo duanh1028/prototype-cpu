@@ -1,0 +1,7 @@
+var g_data = {'dummy':null,
+'3':'include/cache_control_if.vh',
+'1':'include/caches_if.vh',
+'4':'include/cpu_ram_if.vh',
+'5':'source/memory_control.sv',
+'6':'source/ram.sv',
+'2':'testbench/memory_control_tb.sv'};

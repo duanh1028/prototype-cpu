@@ -1,0 +1,10 @@
+org 0x0000
+ORI $1, $0, 0x1
+ORI $2, $0, 0x8
+sw $1, 0xaf0($2)
+sw $2, 0xbf0($2)
+lw $3, 0xcf0($2)
+lw $4, 0xf0($2)
+
+halt
+

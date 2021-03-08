@@ -1,0 +1,660 @@
+var g_data = {
+c8:[{dummy:0}
+,{anchor:'cvg1153',cr:'c',items:[{s:'3',x:'FC',z:'(state == IDLE)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1155',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ccwrite[prio] && ccif.dREN[prio])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dREN[prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.ccwrite[prio]_0',h1:'0',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'2',z:'ccif.ccwrite[prio]_1',h1:'1',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'3',z:'ccif.dREN[prio]_0',h1:'0',t:'c',c1:'ccif.ccwrite[prio]'}
+,{n:'4',z:'ccif.dREN[prio]_1',h1:'1',t:'c',c1:'ccif.ccwrite[prio]'}
+]}
+,{anchor:'cvg1157',items:[{s:'3',x:'FC',z:'(!ccif.ccwrite[prio] && ccif.dREN[prio])',c:'Y',p:'50.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[prio]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'ccif.dREN[prio]',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ccif.ccwrite[prio]_0',h1:'1',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'2',z:'ccif.ccwrite[prio]_1',h1:'0',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'3',z:'ccif.dREN[prio]_0',h1:'1',t:'c',c1:'~ccif.ccwrite[prio]'}
+,{n:'4',z:'ccif.dREN[prio]_1',h1:'1',t:'c',c1:'~ccif.ccwrite[prio]'}
+]}
+,{anchor:'cvg1159',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ccwrite[!prio] && ccif.dREN[!prio])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[!prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dREN[!prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.ccwrite[!prio]_0',h1:'0',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'2',z:'ccif.ccwrite[!prio]_1',h1:'1',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'3',z:'ccif.dREN[!prio]_0',h1:'0',t:'c',c1:'ccif.ccwrite[!prio]'}
+,{n:'4',z:'ccif.dREN[!prio]_1',h1:'1',t:'c',c1:'ccif.ccwrite[!prio]'}
+]}
+,{anchor:'cvg1161',items:[{s:'3',x:'FC',z:'(!ccif.ccwrite[!prio] && ccif.dREN[!prio])',c:'Y',p:'50.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[!prio]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'ccif.dREN[!prio]',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ccif.ccwrite[!prio]_0',h1:'1',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'2',z:'ccif.ccwrite[!prio]_1',h1:'0',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'3',z:'ccif.dREN[!prio]_0',h1:'1',t:'c',c1:'~ccif.ccwrite[!prio]'}
+,{n:'4',z:'ccif.dREN[!prio]_1',h1:'1',t:'c',c1:'~ccif.ccwrite[!prio]'}
+]}
+,{anchor:'cvg1163',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRD)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRD)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRD)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRD)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1165',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1167',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'1',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1169',cr:'c',items:[{s:'3',x:'FC',z:'(state == READ_WRITEBACK1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READ_WRITEBACK1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1171',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1173',cr:'c',items:[{s:'3',x:'FC',z:'(state == READ_WRITEBACK2)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1175',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1177',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRDX)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRDX)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRDX)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRDX)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1179',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'1',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1181',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1183',cr:'c',items:[{s:'3',x:'FC',z:'(state == READFROMRAM1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READFROMRAM1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1185',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1187',cr:'c',items:[{s:'3',x:'FC',z:'(state == READFROMRAM2)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1189',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1191',cr:'c',items:[{s:'3',x:'FC',z:'(state == PURE_WRITEBACK1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == PURE_WRITEBACK1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1193',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1195',cr:'m',items:[{s:'3',x:'FC',z:'(state == PURE_WRITEBACK2)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK2)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK2)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1197',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1199',cr:'c',items:[{s:'3',x:'FC',z:'(state == IDLE)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1201',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRD)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRD)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRD)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRD)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1203',cr:'c',items:[{s:'3',x:'FC',z:'((state == READ_WRITEBACK1) | (state == READ_WRITEBACK2))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK1)',c:'g',r:'',i:''}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK1)_0',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK2)'}
+,{n:'2',z:'(state == READ_WRITEBACK1)_1',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK2)'}
+,{n:'3',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK1)'}
+,{n:'4',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK1)'}
+]}
+,{anchor:'cvg1205',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRDX)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRDX)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRDX)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRDX)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1207',cr:'c',items:[{s:'3',x:'FC',z:'((state == READFROMRAM1) | (state == READFROMRAM2))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM1)',c:'g',r:'',i:''}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM1)_0',h1:'1',t:'c',c1:'~(state == READFROMRAM2)'}
+,{n:'2',z:'(state == READFROMRAM1)_1',h1:'1',t:'c',c1:'~(state == READFROMRAM2)'}
+,{n:'3',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'~(state == READFROMRAM1)'}
+,{n:'4',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'~(state == READFROMRAM1)'}
+]}
+,{anchor:'cvg1209',cr:'m',items:[{s:'3',x:'FC',z:'((state == PURE_WRITEBACK1) | (state == PURE_WRITEBACK2))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK1)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(state == PURE_WRITEBACK2)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK1)_0',h1:'0',t:'c',c1:'~(state == PURE_WRITEBACK2)'}
+,{n:'2',z:'(state == PURE_WRITEBACK1)_1',h1:'1',t:'c',c1:'~(state == PURE_WRITEBACK2)'}
+,{n:'3',z:'(state == PURE_WRITEBACK2)_0',h1:'0',t:'c',c1:'~(state == PURE_WRITEBACK1)'}
+,{n:'4',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'~(state == PURE_WRITEBACK1)'}
+]}
+,{anchor:'cvg1211',items:[{s:'3',x:'FC',z:'((ccif.ramstate == ACCESS) && (((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2)))',c:'Y',p:'75.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{z:'(state == PURE_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'(((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2))'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'(((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2))'}
+,{n:'3',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READ_WRITEBACK2))'}
+,{n:'4',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READ_WRITEBACK2))'}
+,{n:'5',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READFROMRAM2))'}
+,{n:'6',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READFROMRAM2))'}
+,{n:'7',z:'(state == PURE_WRITEBACK2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~((state == READFROMRAM2) | (state == READ_WRITEBACK2)))'}
+,{n:'8',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~((state == READFROMRAM2) | (state == READ_WRITEBACK2)))'}
+]}
+,{anchor:'cvg1213',cr:'c',items:[{s:'3',x:'FC',z:'((state == IDLE) && (ccif.ramstate == ACCESS))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'(ccif.ramstate == ACCESS)'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'(ccif.ramstate == ACCESS)'}
+,{n:'3',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'(state == IDLE)'}
+,{n:'4',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'(state == IDLE)'}
+]}
+],
+c1137:[{dummy:0}
+,{anchor:'cvg1153',cr:'c',items:[{s:'3',x:'FC',z:'(state == IDLE)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1155',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ccwrite[prio] && ccif.dREN[prio])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dREN[prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.ccwrite[prio]_0',h1:'0',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'2',z:'ccif.ccwrite[prio]_1',h1:'1',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'3',z:'ccif.dREN[prio]_0',h1:'0',t:'c',c1:'ccif.ccwrite[prio]'}
+,{n:'4',z:'ccif.dREN[prio]_1',h1:'1',t:'c',c1:'ccif.ccwrite[prio]'}
+]}
+,{anchor:'cvg1157',items:[{s:'3',x:'FC',z:'(!ccif.ccwrite[prio] && ccif.dREN[prio])',c:'Y',p:'50.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[prio]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'ccif.dREN[prio]',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ccif.ccwrite[prio]_0',h1:'1',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'2',z:'ccif.ccwrite[prio]_1',h1:'0',t:'c',c1:'ccif.dREN[prio]'}
+,{n:'3',z:'ccif.dREN[prio]_0',h1:'1',t:'c',c1:'~ccif.ccwrite[prio]'}
+,{n:'4',z:'ccif.dREN[prio]_1',h1:'1',t:'c',c1:'~ccif.ccwrite[prio]'}
+]}
+,{anchor:'cvg1159',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ccwrite[!prio] && ccif.dREN[!prio])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[!prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dREN[!prio]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.ccwrite[!prio]_0',h1:'0',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'2',z:'ccif.ccwrite[!prio]_1',h1:'1',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'3',z:'ccif.dREN[!prio]_0',h1:'0',t:'c',c1:'ccif.ccwrite[!prio]'}
+,{n:'4',z:'ccif.dREN[!prio]_1',h1:'1',t:'c',c1:'ccif.ccwrite[!prio]'}
+]}
+,{anchor:'cvg1161',items:[{s:'3',x:'FC',z:'(!ccif.ccwrite[!prio] && ccif.dREN[!prio])',c:'Y',p:'50.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.ccwrite[!prio]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'ccif.dREN[!prio]',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ccif.ccwrite[!prio]_0',h1:'1',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'2',z:'ccif.ccwrite[!prio]_1',h1:'0',t:'c',c1:'ccif.dREN[!prio]'}
+,{n:'3',z:'ccif.dREN[!prio]_0',h1:'1',t:'c',c1:'~ccif.ccwrite[!prio]'}
+,{n:'4',z:'ccif.dREN[!prio]_1',h1:'1',t:'c',c1:'~ccif.ccwrite[!prio]'}
+]}
+,{anchor:'cvg1163',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRD)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRD)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRD)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRD)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1165',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1167',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'1',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1169',cr:'c',items:[{s:'3',x:'FC',z:'(state == READ_WRITEBACK1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READ_WRITEBACK1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1171',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1173',cr:'c',items:[{s:'3',x:'FC',z:'(state == READ_WRITEBACK2)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1175',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1177',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRDX)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRDX)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRDX)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRDX)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1179',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && !ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'1',t:'c',c1:'~ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'1',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1181',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.cctrans[!reqC] && ccif.dWEN[!reqC])',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ccif.cctrans[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ccif.dWEN[!reqC]',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{}
+,{n:'1',z:'ccif.cctrans[!reqC]_0',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'2',z:'ccif.cctrans[!reqC]_1',h1:'0',t:'c',c1:'ccif.dWEN[!reqC]'}
+,{n:'3',z:'ccif.dWEN[!reqC]_0',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+,{n:'4',z:'ccif.dWEN[!reqC]_1',h1:'0',t:'c',c1:'ccif.cctrans[!reqC]'}
+]}
+,{anchor:'cvg1183',cr:'c',items:[{s:'3',x:'FC',z:'(state == READFROMRAM1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READFROMRAM1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1185',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1187',cr:'c',items:[{s:'3',x:'FC',z:'(state == READFROMRAM2)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1189',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1191',cr:'c',items:[{s:'3',x:'FC',z:'(state == PURE_WRITEBACK1)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK1)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK1)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == PURE_WRITEBACK1)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1193',cr:'c',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1195',cr:'m',items:[{s:'3',x:'FC',z:'(state == PURE_WRITEBACK2)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK2)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK2)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1197',cr:'m',items:[{s:'3',x:'FC',z:'(ccif.ramstate == ACCESS)',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'-'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1199',cr:'c',items:[{s:'3',x:'FC',z:'(state == IDLE)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1201',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRD)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRD)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRD)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRD)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1203',cr:'c',items:[{s:'3',x:'FC',z:'((state == READ_WRITEBACK1) | (state == READ_WRITEBACK2))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READ_WRITEBACK1)',c:'g',r:'',i:''}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READ_WRITEBACK1)_0',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK2)'}
+,{n:'2',z:'(state == READ_WRITEBACK1)_1',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK2)'}
+,{n:'3',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK1)'}
+,{n:'4',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'~(state == READ_WRITEBACK1)'}
+]}
+,{anchor:'cvg1205',cr:'c',items:[{s:'3',x:'FC',z:'(state == SENDBUSRDX)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == SENDBUSRDX)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == SENDBUSRDX)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(state == SENDBUSRDX)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1207',cr:'c',items:[{s:'3',x:'FC',z:'((state == READFROMRAM1) | (state == READFROMRAM2))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == READFROMRAM1)',c:'g',r:'',i:''}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == READFROMRAM1)_0',h1:'1',t:'c',c1:'~(state == READFROMRAM2)'}
+,{n:'2',z:'(state == READFROMRAM1)_1',h1:'1',t:'c',c1:'~(state == READFROMRAM2)'}
+,{n:'3',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'~(state == READFROMRAM1)'}
+,{n:'4',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'~(state == READFROMRAM1)'}
+]}
+,{anchor:'cvg1209',cr:'m',items:[{s:'3',x:'FC',z:'((state == PURE_WRITEBACK1) | (state == PURE_WRITEBACK2))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == PURE_WRITEBACK1)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(state == PURE_WRITEBACK2)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'(state == PURE_WRITEBACK1)_0',h1:'0',t:'c',c1:'~(state == PURE_WRITEBACK2)'}
+,{n:'2',z:'(state == PURE_WRITEBACK1)_1',h1:'1',t:'c',c1:'~(state == PURE_WRITEBACK2)'}
+,{n:'3',z:'(state == PURE_WRITEBACK2)_0',h1:'0',t:'c',c1:'~(state == PURE_WRITEBACK1)'}
+,{n:'4',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'~(state == PURE_WRITEBACK1)'}
+]}
+,{anchor:'cvg1211',items:[{s:'3',x:'FC',z:'((ccif.ramstate == ACCESS) && (((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2)))',c:'Y',p:'75.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(ccif.ramstate == ACCESS)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(state == READFROMRAM2)',c:'g',r:'',i:''}
+,{z:'(state == READ_WRITEBACK2)',c:'g',r:'',i:''}
+,{z:'(state == PURE_WRITEBACK2)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(ccif.ramstate == ACCESS)_0',h1:'0',t:'c',c1:'(((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2))'}
+,{n:'2',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'(((state == READFROMRAM2) | (state == READ_WRITEBACK2)) | (state == PURE_WRITEBACK2))'}
+,{n:'3',z:'(state == READFROMRAM2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READ_WRITEBACK2))'}
+,{n:'4',z:'(state == READFROMRAM2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READ_WRITEBACK2))'}
+,{n:'5',z:'(state == READ_WRITEBACK2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READFROMRAM2))'}
+,{n:'6',z:'(state == READ_WRITEBACK2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~(state == PURE_WRITEBACK2) && ~(state == READFROMRAM2))'}
+,{n:'7',z:'(state == PURE_WRITEBACK2)_0',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~((state == READFROMRAM2) | (state == READ_WRITEBACK2)))'}
+,{n:'8',z:'(state == PURE_WRITEBACK2)_1',h1:'1',t:'c',c1:'((ccif.ramstate == ACCESS) && ~((state == READFROMRAM2) | (state == READ_WRITEBACK2)))'}
+]}
+,{anchor:'cvg1213',cr:'c',items:[{s:'3',x:'FC',z:'((state == IDLE) && (ccif.ramstate == ACCESS))',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(state == IDLE)',c:'g',r:'',i:''}
+,{z:'(ccif.ramstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(state == IDLE)_0',h1:'1',t:'c',c1:'(ccif.ramstate == ACCESS)'}
+,{n:'2',z:'(state == IDLE)_1',h1:'1',t:'c',c1:'(ccif.ramstate == ACCESS)'}
+,{n:'3',z:'(ccif.ramstate == ACCESS)_0',h1:'1',t:'c',c1:'(state == IDLE)'}
+,{n:'4',z:'(ccif.ramstate == ACCESS)_1',h1:'1',t:'c',c1:'(state == IDLE)'}
+]}
+],
+c9:[{dummy:0}
+,{anchor:'cvg1234',cr:'c',items:[{s:'3',x:'FC',z:'(rstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(rstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(rstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(rstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1236',cr:'c',items:[{s:'3',x:'FC',z:'(rstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(rstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(rstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(rstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1238',items:[{s:'3',x:'FC',z:'(!(ramif.ramREN || ramif.ramWEN) || (ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN}))',c:'R',p:'25.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ramif.ramREN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramWEN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(ramif.ramaddr != addr)',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'(en != {ramif.ramREN,ramif.ramWEN})',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramWEN)'}
+,{n:'2',z:'ramif.ramREN_1',h1:'1',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramWEN)'}
+,{n:'3',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramREN)'}
+,{n:'4',z:'ramif.ramWEN_1',h1:'1',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramREN)'}
+,{n:'5',z:'(ramif.ramaddr != addr)_0',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(en != {ramif.ramREN,ramif.ramWEN}))'}
+,{n:'6',z:'(ramif.ramaddr != addr)_1',h1:'0',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(en != {ramif.ramREN,ramif.ramWEN}))'}
+,{n:'7',z:'(en != {ramif.ramREN,ramif.ramWEN})_0',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(ramif.ramaddr != addr))'}
+,{n:'8',z:'(en != {ramif.ramREN,ramif.ramWEN})_1',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(ramif.ramaddr != addr))'}
+]}
+,{anchor:'cvg1240',cr:'m',items:[{s:'3',x:'FC',z:'((ramif.ramREN || ramif.ramWEN) && (count < 0))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ramif.ramREN',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ramif.ramWEN',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'(count < 0)',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{}
+,{n:'1',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramWEN)'}
+,{n:'2',z:'ramif.ramREN_1',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramWEN)'}
+,{n:'3',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramREN)'}
+,{n:'4',z:'ramif.ramWEN_1',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramREN)'}
+,{n:'5',z:'(count < 0)_0',h1:'1',t:'c',c1:'(ramif.ramREN || ramif.ramWEN)'}
+,{n:'6',z:'(count < 0)_1',h1:'0',t:'c',c1:'(ramif.ramREN || ramif.ramWEN)'}
+]}
+,{anchor:'cvg1242',cr:'m',items:[{s:'3',x:'FC',z:'(!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0))))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'nRST',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(addr == ramif.ramaddr)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramREN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramWEN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(count >= 0)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'nRST_0',h1:'0',t:'c',c1:'~((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'2',z:'nRST_1',h1:'1',t:'c',c1:'~((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'3',z:'(addr == ramif.ramaddr)_0',h1:'0',t:'c',c1:'(nRST && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'4',z:'(addr == ramif.ramaddr)_1',h1:'1',t:'c',c1:'(nRST && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'5',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramWEN)'}
+,{n:'6',z:'ramif.ramREN_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramWEN)'}
+,{n:'7',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramREN)'}
+,{n:'8',z:'ramif.ramWEN_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramREN)'}
+,{n:'9',z:'(count >= 0)_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (ramif.ramREN || ramif.ramWEN))'}
+,{n:'10',z:'(count >= 0)_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (ramif.ramREN || ramif.ramWEN))'}
+]}
+],
+c1227:[{dummy:0}
+,{anchor:'cvg1234',cr:'c',items:[{s:'3',x:'FC',z:'(rstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(rstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(rstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(rstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1236',cr:'c',items:[{s:'3',x:'FC',z:'(rstate == ACCESS)',c:'G',p:'100.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'(rstate == ACCESS)',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'(rstate == ACCESS)_0',h1:'1',t:'c',c1:'-'}
+,{n:'2',z:'(rstate == ACCESS)_1',h1:'1',t:'c',c1:'-'}
+]}
+,{anchor:'cvg1238',items:[{s:'3',x:'FC',z:'(!(ramif.ramREN || ramif.ramWEN) || (ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN}))',c:'R',p:'25.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ramif.ramREN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramWEN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(ramif.ramaddr != addr)',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{z:'(en != {ramif.ramREN,ramif.ramWEN})',c:'g',r:'',i:''}
+,{}
+,{n:'1',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramWEN)'}
+,{n:'2',z:'ramif.ramREN_1',h1:'1',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramWEN)'}
+,{n:'3',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramREN)'}
+,{n:'4',z:'ramif.ramWEN_1',h1:'1',t:'c',c1:'(~((ramif.ramaddr != addr) || (en != {ramif.ramREN,ramif.ramWEN})) && ~ramif.ramREN)'}
+,{n:'5',z:'(ramif.ramaddr != addr)_0',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(en != {ramif.ramREN,ramif.ramWEN}))'}
+,{n:'6',z:'(ramif.ramaddr != addr)_1',h1:'0',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(en != {ramif.ramREN,ramif.ramWEN}))'}
+,{n:'7',z:'(en != {ramif.ramREN,ramif.ramWEN})_0',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(ramif.ramaddr != addr))'}
+,{n:'8',z:'(en != {ramif.ramREN,ramif.ramWEN})_1',h1:'1',t:'c',c1:'(~!(ramif.ramREN || ramif.ramWEN) && ~(ramif.ramaddr != addr))'}
+]}
+,{anchor:'cvg1240',cr:'m',items:[{s:'3',x:'FC',z:'((ramif.ramREN || ramif.ramWEN) && (count < 0))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'ramif.ramREN',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'ramif.ramWEN',c:'r',r:'No hits',i:'Hit \'_0\' and \'_1\''}
+,{z:'(count < 0)',c:'r',r:'\'_1\' not hit',i:'Hit \'_1\''}
+,{}
+,{n:'1',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramWEN)'}
+,{n:'2',z:'ramif.ramREN_1',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramWEN)'}
+,{n:'3',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramREN)'}
+,{n:'4',z:'ramif.ramWEN_1',h1:'0',t:'c',c1:'((count < 0) && ~ramif.ramREN)'}
+,{n:'5',z:'(count < 0)_0',h1:'1',t:'c',c1:'(ramif.ramREN || ramif.ramWEN)'}
+,{n:'6',z:'(count < 0)_1',h1:'0',t:'c',c1:'(ramif.ramREN || ramif.ramWEN)'}
+]}
+,{anchor:'cvg1242',cr:'m',items:[{s:'3',x:'FC',z:'(!nRST || ((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0))))',c:'R',p:'0.00',d:'0',m:'0',F:'1'}
+,{}
+,{z:'nRST',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(addr == ramif.ramaddr)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramREN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'ramif.ramWEN',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{z:'(count >= 0)',c:'r',r:'\'_0\' not hit',i:'Hit \'_0\''}
+,{}
+,{n:'1',z:'nRST_0',h1:'0',t:'c',c1:'~((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'2',z:'nRST_1',h1:'1',t:'c',c1:'~((addr == ramif.ramaddr) && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'3',z:'(addr == ramif.ramaddr)_0',h1:'0',t:'c',c1:'(nRST && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'4',z:'(addr == ramif.ramaddr)_1',h1:'1',t:'c',c1:'(nRST && ((ramif.ramREN || ramif.ramWEN) && (count >= 0)))'}
+,{n:'5',z:'ramif.ramREN_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramWEN)'}
+,{n:'6',z:'ramif.ramREN_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramWEN)'}
+,{n:'7',z:'ramif.ramWEN_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramREN)'}
+,{n:'8',z:'ramif.ramWEN_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (count >= 0) && ~ramif.ramREN)'}
+,{n:'9',z:'(count >= 0)_0',h1:'0',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (ramif.ramREN || ramif.ramWEN))'}
+,{n:'10',z:'(count >= 0)_1',h1:'1',t:'c',c1:'(nRST && (addr == ramif.ramaddr) && (ramif.ramREN || ramif.ramWEN))'}
+]}
+],
+dummyEnd:0
+};
+processCondExprData(g_data);

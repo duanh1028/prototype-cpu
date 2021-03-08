@@ -1,0 +1,10 @@
+org 0x0000
+ori $1, $zero, 0xf0
+ori $2, $zero, 0x80
+ori $7, $7, 0xbeef
+
+halt
+
+lui $7, 0xdead
+
+halt
